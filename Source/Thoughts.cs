@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 using RimWorld;
 using Verse;
 
@@ -20,7 +16,7 @@ namespace harvest_kurin_tails
             {
                 if (p.def.defName == "Kurin_Race") { isKurin = true; } // Kurin HAR
                 if (p.def.defName == "Kurin") { isKurin = true; } // Kurin Deluxe
-            } catch (Exception e) { }
+            } catch (Exception) { }
             if (!isKurin) { return ThoughtState.Inactive;  }
             int count = 0;
             string text = null;
@@ -72,7 +68,7 @@ namespace harvest_kurin_tails
                 if (otherPawn.def.defName == "Kurin_Race") { theyAreKurin = true; } // Kurin HAR
                 if (p.def.defName == "Kurin") { iAmKurin = true; } // Kurin Deluxe
                 if (otherPawn.def.defName == "Kurin") { theyAreKurin = true; } // Kurin Deluxe
-            } catch (Exception e) { }
+            } catch (Exception) { }
 
 
             if (!iAmKurin) { return false; }
@@ -114,7 +110,7 @@ namespace harvest_kurin_tails
             try
             {
                 if (p.def.defName == "ReviaRaceAlien") { isRevia = true; } // Revia HAR
-            } catch (Exception e) { }
+            } catch (Exception) { }
             if (!isRevia) { return ThoughtState.Inactive; }
             int count = 0;
             string text = null;
