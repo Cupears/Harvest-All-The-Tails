@@ -1,5 +1,12 @@
 # Harvest All The Tails - 1.7 Race Support
 
+> **Merged into Harvest Everything + Tails.**
+> This mod is no longer maintained as a standalone package. Tail harvesting, tail
+> installation and all race modules now ship inside
+> [Cupears/HarvestEverything](https://github.com/Cupears/HarvestEverything).
+> Do not enable both mods together; they are declared incompatible. This repository
+> remains available for the original source history and MIT-licensed content.
+
 ![RimWorld](https://img.shields.io/badge/RimWorld-1.7-orange) ![Stage](https://img.shields.io/badge/stage-beta.1-purple) ![License](https://img.shields.io/badge/license-MIT-green)
 
 Natural tail harvesting and transplantation for supported humanoid anatomy.
