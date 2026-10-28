@@ -1,63 +1,52 @@
-# Harvest ~~Kurin~~ All The Tails
-A Rimworld mod to allow the harvesting and use of various Animal-kin tails.  All supported races allow the user to harvest (willingly or not) the tails of the races, which can then be used to replace tails on other pawns of the same race.  For many races there are alternative uses available, where appropriate.  None of the race mods listed below are required to run this mod; it dynamically adjusts the content available based on the race mods you have loaded.
-In addition, if you have the Harvest Everything mod installed, this will also unlock harvesting and installation of additional race-specific body parts like ears or horns where they are defined.
-If you have the Harvest Organs Post Mortem mod installed, tails and the HE bonus items will have a chance to appear in autopsies.
+# Harvest All The Tails â€” 1.7 Race Support
 
-### Kurin
-- Supported mods: Kurin HAR Edition; Kurin, the Three Tailed Fox \[Deluxe Edition\]
-- HE bonuses: Ears
-- Alternative tail uses: Can be skinned at a tailoring bench, producing Kurin Tail Fur, a wool-like material that can be used to make stuff.  Be warned, Kurins dislike wearing Kurin Fur clothing even more then humans dislike human leather, and they dislike seeing others wearing thier sister's fur.  If they see another Kurin wearing Kurin, they will view them as a traitor!  Note that psychopaths, cannibals, and bloodlusters will instead take glee in wearing Kurin fur.
-- Other change: For Kurin HAR Edition, the recipe for the Kurin Tail Blade is modified to require only 1 advanced component, but now needs a fresh kurin tail.
+![RimWorld](https://img.shields.io/badge/RimWorld-1.7-orange) ![Stage](https://img.shields.io/badge/stage-beta.1-purple) ![License](https://img.shields.io/badge/license-MIT-green)
 
-### Kimiri
-- Supported mods: Kurin, the Three Tailed Fox \[Deluxe Edition\]
-- HE bonuses: Ears, Horns
-- Alternative tail uses: None.
+Natural tail harvesting and transplantation for supported humanoid anatomy.
 
-### Revia
-- Supported mods: Revia Race
-- HE bonuses: None - the ears are "native" already
-- Alternative tail uses: Can be skinned at a tailoring bench, producing Revia Tail Fur, a wool-like material that can be used to make stuff.  Being bloodthirsty psychopaths, Revia take pride in wearing in wearing trophies of those that were less then them. They still dislike seeing non-Revia wearing Revia fur.  If they see another Revia wearing it, they will either be jealous or show begrudging respect.
+## Changes â€” 1.7.0-beta.1
 
-### Moyo
-- Supported mods: Moyo-From the depth
-- HE bonuses: None
-- Alternative tail uses: Can be wrung out at butchery table, producing 5 moyo bloodbags.
+- Rebuilt runtime assembly for RimWorld 1.7 / .NET 10.
+- Added generic tail, Tozol tail and Yanzihko tail harvesting and installation.
+- Reused native Dogbold, Foxbold and Orassan tail items.
+- Added anatomy-based surgery availability across installed humanoid races.
+- Retained upstream conditional race modules.
+- Added separate package identity and incompatibility with the original.
 
-### Dragonian
-- Supported mods: Dragonian Prime Race2.0
-- HE bonuses: None -- DPR2 already add Horns natively with HE
-- Alternative tail uses: None
+## Race coverage
 
-### Silkiera
-- Supported mods: \[1.4\]Silkiera Race
-- HE bonuses: Ear.  Note that Silkiera have _three_ ear body parts: two normal, one cat ears that's both pointy ears.  This adds the merged cat ears body part.
-- Alternative tail uses: None
+The current mod list contains 46 humanoid race definitions. 19 have actual tail parts.
 
-### Ratkin
-- Supported mods: NewRatkinPlus
-- HE bonuses: None - the ears are "native" already
-- Alternative tail uses: None
+Added coverage includes Vulpoids, Lombax, Kisalfar, FressÃ¤lfar, Yanzihko felines, Tozol, Frosty Dragon, Dogbolds, Foxbolds, Orassans and the tailed Big and Small bodies. Matching tail types share an item; different anatomical tail types do not.
 
-### Miqo'te
-- Supported mods: A Rim Reborn - Miqo'te Race
-- HE bonuses: None - the ears are "native" already
-- Alternative tail uses: None
+**Visual-only tails are not anatomical parts.** Anthro Race variants and xenotype/gene-only appearances with no tail BodyPartRecord have no tail to amputate or transplant. No body structure or gene is invented or changed. See [race coverage](RACE-COVERAGE.md).
 
-## Au Ra
-- Supported mods: A Rim Reborn - Au Ra Race
-- HE bonuses: Horns
-- Alternative tail uses: None
+## Load order
 
-## Kiiro
-- Supported mods: Kiiro Race
-- HE bonus: Tailbone
-- Alternative tail uses: None
+Harmony â†’ race mods â†’ this fork â†’ Harvest Everything (original or fork) â†’ Harvest Organs Post Mortem â†’ compatibility patches.
 
+The new recipes require the matching tail part. Post Mortem retains its own corpse condition and success rules. Ordinary animal transplantation is outside this humanoid-race extension.
 
-### Ineligible Races/Mods
-These are races or mods that unfortunately can not be brought into the harvesting fold because the way the tail part is implemented is as a cosmetic attachment, and not an actual body part.
-- Revia from *Revia Race - biotech*
-- Dragonian from *Gloomy Dragonian Race*
+## Credits and distribution
 
-Steam version: https://steamcommunity.com/sharedfiles/filedetails/?id=2991826214
+Original project: [EspioIdsavant/Harvest-All-The-Tails](https://github.com/EspioIdsavant/Harvest-All-The-Tails). Original credits and MIT license retained. 1.7 maintenance: Cupears.
+
+A new Workshop item is required; the original PublishedFileId is not included as publishing metadata.
+
+## Build
+
+Requires the .NET 10 SDK, RimWorld 1.7 and Harmony.
+
+```powershell
+dotnet build Source17/Mod.csproj -c Release -p:RimWorldDir="M:/Steam/steamapps/common/RimWorld" -p:HarmonyPath="M:/Steam/steamapps/workshop/content/294100/2009463077/1.7/Assemblies/0Harmony.dll"
+```
+
+Game and Harmony assemblies are referenced locally and are not included in the 1.7 package.
+
+## Installation
+
+Enable the fork instead of the original. Both versions are declared incompatible to prevent duplicate content. Keep Harmony enabled. Existing upstream item names are retained.
+
+## Testing
+
+493 automated checks passed against the current 1.7 game assemblies and 46 humanoid race definitions: XML patch application, repeat application without duplicates, existing tail items, exact anatomical matching and surgery hook binding. Live startup validation passed across 768 living humanoid definitions, including runtime-generated races: 18 tail surgery definitions, no missing tail mappings and no mod startup errors. Full surgery outcomes and visual tail disappearance still need colony testing.

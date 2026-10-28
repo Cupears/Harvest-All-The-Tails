@@ -1,2 +1,5 @@
-.vs/
-obj/
+**/bin/
+**/obj/
+**/*.pdb
+*.user
+*.zip

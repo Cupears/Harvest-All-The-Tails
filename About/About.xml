@@ -1,15 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <ModMetaData>
-    <name>Harvest All The Tails</name>
-    <author>Espio Idsavant</author>
-    <packageId>espio.harvestkurintails</packageId>
-    <description>This mod adds the ability to harvest and install various animal-kin tails: Kurin, Kimiri, Revia, Moyo, Dragonian, Silkiera, Ratkin, Miqo'te, Au Ra, Kiiro, Rabbie, Glassy, Mofy, Heruan, Nyaron.  Some tails have alternate uses.  Adds special body parts as well if Harvest Everything is installed.</description>
-    <supportedVersions>
-        <li>1.4</li>
-        <li>1.5</li>
-        <li>1.6</li>
-    </supportedVersions>
-    <loadAfter>
+    <name>Harvest All The Tails — 1.7 Race Support</name>
+    <author>Espio Idsavant; 1.7 fork: Cupears</author>
+    <packageId>cupears.harvestalltails17</packageId>
+    <description>Natural tail harvesting and transplantation for supported humanoid anatomy. RimWorld 1.7 beta. Maintained fork by Cupears. See README and compatibility notes.</description>
+    <supportedVersions><li>1.7</li></supportedVersions><loadAfter>
         <li>Seioch.Kurin.HAR</li>
         <li>inoshishi3.kttfde</li>
         <li>FS.ReviaRace</li>
@@ -25,20 +20,9 @@
         <li>bep.mofy.twfiaclr</li>
         <li>aelanna.heruan</li>
         <li>Farmradish.Nyaron</li>
-    </loadAfter>
+    <li>yanzihko.vaf</li><li>yanzihko.ldw</li><li>yanzihko.yzrcm</li><li>yanzihko.kfls</li><li>whaat.tozolrace</li><li>armoredampharos.dogbolds</li><li>armoredampharos.foxbolds</li><li>zayl.forstyrace</li><li>redmattis.betterprerequisites</li><li>redmattis.bigsmall.core</li><li>rmk.anthrorace</li><li>erdelf.humanoidalienraces</li></loadAfter>
     <loadBefore>
         <li>ogliss.ykara.harvesteverything</li>
         <li>smuffle.harvestorganpostmortem</li>
-    </loadBefore>
-    <modVersion>1.3</modVersion>
-</ModMetaData>
-<!--
-When adding a preview photo
-
-Must be called Preview.png
-
-Should be
-640x360
-
-Must Not Be Larger then 1MB in size
- -->
+    <li>cupears.harvesteverything17</li><li>smuffle.harvestorganspostmortem</li></loadBefore>
+    <incompatibleWith><li>espio.harvestkurintails</li></incompatibleWith><modDependencies><li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName></li></modDependencies><url>https://github.com/Cupears/Harvest-All-The-Tails</url><modVersion>1.7.0.1</modVersion></ModMetaData>
