@@ -45,7 +45,7 @@
               <RecipeDef ParentName="SurgeryFlesh">
                 <defName>HATT17_Remove_OTail</defName>
                 <label>remove natural orassan tail</label>
-                <jobString>Removeing natural tail.</jobString>
+                <jobString>Removing natural tail.</jobString>
                 <workerClass>Recipe_RemoveBodyPart</workerClass>
                 <workAmount>400</workAmount>
                 <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>

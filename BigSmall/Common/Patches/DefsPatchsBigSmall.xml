@@ -71,7 +71,7 @@
               <RecipeDef ParentName="SurgeryFlesh">
                 <defName>HATT17_Remove_Tail</defName>
                 <label>remove natural tail</label>
-                <jobString>Removeing natural tail.</jobString>
+                <jobString>Removing natural tail.</jobString>
                 <workerClass>Recipe_RemoveBodyPart</workerClass>
                 <workAmount>400</workAmount>
                 <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
@@ -82,6 +82,36 @@
               </RecipeDef>
             </value>
           </nomatch>
+        </li>
+        <!--
+          Some race mods (Logann, Ferrex) already ship their own generic "Tail" item
+          for the shared Tail body part. Their removed tails drop that item, so the
+          install recipe has to accept it as well as the generic HATT17_Tail.
+        -->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Tail"]</xpath>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/RecipeDef[defName="HATT17_Install_Tail"]/ingredients/li/filter/thingDefs/li[.="Tail"]</xpath>
+                <nomatch Class="PatchOperationAdd">
+                  <xpath>Defs/RecipeDef[defName="HATT17_Install_Tail"]/ingredients/li/filter/thingDefs</xpath>
+                  <value>
+                    <li>Tail</li>
+                  </value>
+                </nomatch>
+              </li>
+              <li Class="PatchOperationConditional">
+                <xpath>Defs/RecipeDef[defName="HATT17_Install_Tail"]/fixedIngredientFilter/thingDefs/li[.="Tail"]</xpath>
+                <nomatch Class="PatchOperationAdd">
+                  <xpath>Defs/RecipeDef[defName="HATT17_Install_Tail"]/fixedIngredientFilter/thingDefs</xpath>
+                  <value>
+                    <li>Tail</li>
+                  </value>
+                </nomatch>
+              </li>
+            </operations>
+          </match>
         </li>
       </operations>
     </match>

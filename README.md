@@ -7,7 +7,9 @@ Natural tail harvesting and transplantation for supported humanoid anatomy.
 ## Changes - 1.7.0-beta.1
 
 - Rebuilt runtime assembly for RimWorld 1.7 / .NET 10.
-- Added generic tail, Tozol tail and Yanzihko tail harvesting and installation.
+- Added generic tail, Tozol tail, Yanzihko tail and xenomorph tail harvesting and installation.
+- Added Logann, Ferrex and Xenomorph Type coverage.
+- The generic tail install recipe also accepts race-supplied `Tail` items.
 - Reused native Dogbold, Foxbold and Orassan tail items.
 - Added anatomy-based surgery availability across installed humanoid races.
 - Retained upstream conditional race modules.
@@ -15,9 +17,9 @@ Natural tail harvesting and transplantation for supported humanoid anatomy.
 
 ## Race coverage
 
-The current mod list contains 46 humanoid race definitions. 19 have actual tail parts.
+The current mod list contains 51 humanoid race definitions. 23 have actual tail parts.
 
-Added coverage includes Vulpoids, Lombax, Kisalfar, Fressalfar, Yanzihko felines, Tozol, Frosty Dragon, Dogbolds, Foxbolds, Orassans and the tailed Big and Small bodies. Matching tail types share an item; different anatomical tail types do not.
+Added coverage includes Vulpoids, Lombax, Kisalfar, Fressalfar, Yanzihko felines, Tozol, Frosty Dragon, Dogbolds, Foxbolds, Orassans, Logann, Ferrex, Xenomorph Type and the tailed Big and Small bodies. Matching tail types share an item; different anatomical tail types do not.
 
 **Visual-only tails are not anatomical parts.** Anthro Race variants and xenotype/gene-only appearances with no tail BodyPartRecord have no tail to amputate or transplant. No body structure or gene is invented or changed. See [race coverage](RACE-COVERAGE.md).
 
@@ -39,11 +41,11 @@ A new Workshop item is required; the original PublishedFileId is not included as
 |---|---|
 | `1.7/` | RimWorld 1.7 content (Assemblies) |
 | `About/` | Mod metadata and preview image |
-| `Races17/` | 1.7 race patches |
+| `Races17/` | Insect tail patches (def-driven fallback) |
 | `Source17/` | C# source for the 1.7 build |
 | `tools/` | Packaging script |
 | `Kurin/`, `Revia/`, `Moyo/`, `Dragonian/`, `DragonianUnofficial/`, `Silkiera/`, `Ratkin/`, `Kiiro/`, `Rabbie/`, `Glassy/`, `Mofy/`, `Heruan/`, `Nyaron/` | Race modules for HAR and anthro races |
-| `BigSmall/`, `Dogbold/`, `Foxbold/`, `Orassan/`, `Tozol/`, `Yanzihko/` | Race modules for tailed non-HAR races |
+| `BigSmall/`, `Dogbold/`, `Foxbold/`, `Orassan/`, `Tozol/`, `Yanzihko/`, `Xenomorph/` | Race modules for tailed non-HAR races |
 
 ## Build
 
