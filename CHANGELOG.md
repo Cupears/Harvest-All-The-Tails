@@ -1,7 +1,8 @@
 ## Changes - 1.7.0.2
 
-- Merged into Harvest Everything + Tails; the standalone tails mod is deprecated.
-- The merged mod declares incompatibility with `cupears.harvestalltails17`.
+- Merged into Harvest Everything + Tails; the standalone tails mod is deprecated and not needed if you use Harvest Everything.
+- About metadata and README now point users at Harvest Everything + Tails.
+- The merged mod and this package declare each other incompatible.
 - No functional changes in this repository; development continues in [Cupears/HarvestEverything](https://github.com/Cupears/HarvestEverything).
 
 ## Changes - 1.7.0-beta.1

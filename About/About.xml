@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <ModMetaData>
-    <name>Harvest All The Tails - 1.7 Race Support</name>
+    <name>Harvest All The Tails [MERGED - use Harvest Everything]</name>
     <author>Espio Idsavant; 1.7 fork: Cupears</author>
     <packageId>cupears.harvestalltails17</packageId>
-    <description>Natural tail harvesting and transplantation for supported humanoid anatomy. RimWorld 1.7 beta. Maintained fork by Cupears. See README and compatibility notes.</description>
+    <description>DEPRECATED. Not needed if you plan to use Harvest Everything + Tails (cupears.harvesteverything17), which already includes all of this tail content plus body-part harvesting and animal butchering. Install that mod instead of this one and do not enable both. This package remains only for the old standalone setup: natural tail harvesting and transplantation for supported humanoid anatomy. RimWorld 1.7 beta. See README.</description>
     <supportedVersions>
         <li>1.7</li>
     </supportedVersions>
@@ -43,11 +43,11 @@
     <loadBefore>
         <li>ogliss.ykara.harvesteverything</li>
         <li>smuffle.harvestorganpostmortem</li>
-        <li>cupears.harvesteverything17</li>
         <li>smuffle.harvestorganspostmortem</li>
     </loadBefore>
     <incompatibleWith>
         <li>espio.harvestkurintails</li>
+        <li>cupears.harvesteverything17</li>
     </incompatibleWith>
     <modDependencies>
         <li>
@@ -56,5 +56,5 @@
         </li>
     </modDependencies>
     <url>https://github.com/Cupears/Harvest-All-The-Tails</url>
-    <modVersion>1.7.0.1</modVersion>
+    <modVersion>1.7.0.2</modVersion>
 </ModMetaData>

@@ -1,11 +1,14 @@
 # Harvest All The Tails - 1.7 Race Support
 
 > **Merged into Harvest Everything + Tails.**
-> This mod is no longer maintained as a standalone package. Tail harvesting, tail
-> installation and all race modules now ship inside
-> [Cupears/HarvestEverything](https://github.com/Cupears/HarvestEverything).
-> Do not enable both mods together; they are declared incompatible. This repository
-> remains available for the original source history and MIT-licensed content.
+>
+> **You do not need this mod if you use [Harvest Everything + Tails](https://github.com/Cupears/HarvestEverything).**
+> That mod already contains every tail, race module and recipe from this one, plus
+> body-part harvesting and animal butchering. Install that instead of this.
+>
+> This mod is no longer needed as a standalone package and is no longer maintained here.
+> Do not enable both together; they are declared incompatible. This repository remains
+> available for the original source history and MIT-licensed content.
 
 ![RimWorld](https://img.shields.io/badge/RimWorld-1.7-orange) ![Stage](https://img.shields.io/badge/stage-beta.1-purple) ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -31,6 +34,13 @@ Added coverage includes Vulpoids, Lombax, Kisalfar, Fressalfar, Yanzihko felines
 **Visual-only tails are not anatomical parts.** Anthro Race variants and xenotype/gene-only appearances with no tail BodyPartRecord have no tail to amputate or transplant. No body structure or gene is invented or changed. See [race coverage](RACE-COVERAGE.md).
 
 ## Load order
+
+If you are using Harvest Everything + Tails, this mod is not part of the load order at all.
+That mod only needs:
+
+Harmony -> race mods -> Harvest Everything + Tails -> Harvest Organs Post Mortem -> compatibility patches.
+
+The rest of this section applies only to the deprecated standalone build:
 
 Harmony -> race mods -> this fork -> Harvest Everything (original or fork) -> Harvest Organs Post Mortem -> compatibility patches.
 
@@ -66,4 +76,9 @@ Game and Harmony assemblies are referenced locally and are not included in the 1
 
 ## Installation
 
-Enable the fork instead of the original. Both versions are declared incompatible to prevent duplicate content. Keep Harmony enabled. Existing upstream item names are retained.
+**Use [Harvest Everything + Tails](https://github.com/Cupears/HarvestEverything) instead.**
+It includes this entire mod, so a separate tails mod is not needed.
+
+If you are still on the standalone build, enable this fork instead of the original. The
+original, this fork and Harvest Everything + Tails are declared incompatible to prevent
+duplicate content. Keep Harmony enabled. Existing upstream item names are retained.
