@@ -1,4 +1,4 @@
-﻿# Harvest All The Tails - 1.7 Race Support
+# Harvest All The Tails - 1.7 Race Support
 
 ![RimWorld](https://img.shields.io/badge/RimWorld-1.7-orange) ![Stage](https://img.shields.io/badge/stage-beta.1-purple) ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -27,7 +27,7 @@ Added coverage includes Vulpoids, Lombax, Kisalfar, Fressalfar, Yanzihko felines
 
 Harmony -> race mods -> this fork -> Harvest Everything (original or fork) -> Harvest Organs Post Mortem -> compatibility patches.
 
-The new recipes require the matching tail part. Post Mortem retains its own corpse condition and success rules. Ordinary animal transplantation is outside this humanoid-race extension.
+The new recipes require the matching tail part. Post Mortem retains its own corpse condition and success rules. Ordinary animal transplantation is outside this humanoid-race extension; the Harvest Everything fork handles butchering animal corpses for organs.
 
 ## Credits and distribution
 

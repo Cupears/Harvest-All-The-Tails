@@ -1,4 +1,4 @@
-## Changes — 1.7.0-beta.1
+## Changes - 1.7.0-beta.1
 
 - Rebuilt runtime assembly for RimWorld 1.7 / .NET 10.
 - Added generic tail, Tozol tail, Yanzihko tail and xenomorph tail harvesting and installation.
