@@ -16,6 +16,12 @@
     <li IfModActive="bep.mofy.twfiaclr">Mofy/Common</li>
     <li IfModActive="aelanna.heruan">Heruan/Common</li>
     <li IfModActive="Farmradish.Nyaron">Nyaron/Common</li>
+    <li>BigSmall/Common</li>
+    <li>Dogbold/Common</li>
+    <li>Foxbold/Common</li>
+    <li>Orassan/Common</li>
+    <li>Tozol/Common</li>
+    <li>Yanzihko/Common</li>
     <li>Races17</li>
   </v1.7>
 </loadFolders>

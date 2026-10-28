@@ -42,7 +42,8 @@ A new Workshop item is required; the original PublishedFileId is not included as
 | `Races17/` | 1.7 race patches |
 | `Source17/` | C# source for the 1.7 build |
 | `tools/` | Packaging script |
-| `Kurin/`, `Revia/`, `Moyo/`, ... | Conditional race modules |
+| `Kurin/`, `Revia/`, `Moyo/`, `Dragonian/`, `DragonianUnofficial/`, `Silkiera/`, `Ratkin/`, `Kiiro/`, `Rabbie/`, `Glassy/`, `Mofy/`, `Heruan/`, `Nyaron/` | Race modules for HAR and anthro races |
+| `BigSmall/`, `Dogbold/`, `Foxbold/`, `Orassan/`, `Tozol/`, `Yanzihko/` | Race modules for tailed non-HAR races |
 
 ## Build
 
