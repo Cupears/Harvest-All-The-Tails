@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "harvest_kurin_tails/1.0.0": {
+        "runtime": {
+          "harvest_kurin_tails.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "harvest_kurin_tails/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
