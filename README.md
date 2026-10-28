@@ -1,10 +1,10 @@
-# Harvest All The Tails â€” 1.7 Race Support
+# Harvest All The Tails — 1.7 Race Support
 
 ![RimWorld](https://img.shields.io/badge/RimWorld-1.7-orange) ![Stage](https://img.shields.io/badge/stage-beta.1-purple) ![License](https://img.shields.io/badge/license-MIT-green)
 
 Natural tail harvesting and transplantation for supported humanoid anatomy.
 
-## Changes â€” 1.7.0-beta.1
+## Changes — 1.7.0-beta.1
 
 - Rebuilt runtime assembly for RimWorld 1.7 / .NET 10.
 - Added generic tail, Tozol tail and Yanzihko tail harvesting and installation.
@@ -23,7 +23,7 @@ Added coverage includes Vulpoids, Lombax, Kisalfar, FressÃ¤lfar, Yanzihko feli
 
 ## Load order
 
-Harmony â†’ race mods â†’ this fork â†’ Harvest Everything (original or fork) â†’ Harvest Organs Post Mortem â†’ compatibility patches.
+Harmony —†’ race mods —†’ this fork —†’ Harvest Everything (original or fork) —†’ Harvest Organs Post Mortem —†’ compatibility patches.
 
 The new recipes require the matching tail part. Post Mortem retains its own corpse condition and success rules. Ordinary animal transplantation is outside this humanoid-race extension.
 
