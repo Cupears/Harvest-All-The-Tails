@@ -1,10 +1,10 @@
-# Harvest All The Tails — 1.7 Race Support
+﻿# Harvest All The Tails â€” 1.7 Race Support
 
 ![RimWorld](https://img.shields.io/badge/RimWorld-1.7-orange) ![Stage](https://img.shields.io/badge/stage-beta.1-purple) ![License](https://img.shields.io/badge/license-MIT-green)
 
 Natural tail harvesting and transplantation for supported humanoid anatomy.
 
-## Changes — 1.7.0-beta.1
+## Changes â€” 1.7.0-beta.1
 
 - Rebuilt runtime assembly for RimWorld 1.7 / .NET 10.
 - Added generic tail, Tozol tail and Yanzihko tail harvesting and installation.
@@ -17,13 +17,13 @@ Natural tail harvesting and transplantation for supported humanoid anatomy.
 
 The current mod list contains 46 humanoid race definitions. 19 have actual tail parts.
 
-Added coverage includes Vulpoids, Lombax, Kisalfar, FressÃ¤lfar, Yanzihko felines, Tozol, Frosty Dragon, Dogbolds, Foxbolds, Orassans and the tailed Big and Small bodies. Matching tail types share an item; different anatomical tail types do not.
+Added coverage includes Vulpoids, Lombax, Kisalfar, FressÃƒÂ¤lfar, Yanzihko felines, Tozol, Frosty Dragon, Dogbolds, Foxbolds, Orassans and the tailed Big and Small bodies. Matching tail types share an item; different anatomical tail types do not.
 
 **Visual-only tails are not anatomical parts.** Anthro Race variants and xenotype/gene-only appearances with no tail BodyPartRecord have no tail to amputate or transplant. No body structure or gene is invented or changed. See [race coverage](RACE-COVERAGE.md).
 
 ## Load order
 
-Harmony —†’ race mods —†’ this fork —†’ Harvest Everything (original or fork) —†’ Harvest Organs Post Mortem —†’ compatibility patches.
+Harmony â€”â€ â€™ race mods â€”â€ â€™ this fork â€”â€ â€™ Harvest Everything (original or fork) â€”â€ â€™ Harvest Organs Post Mortem â€”â€ â€™ compatibility patches.
 
 The new recipes require the matching tail part. Post Mortem retains its own corpse condition and success rules. Ordinary animal transplantation is outside this humanoid-race extension.
 
