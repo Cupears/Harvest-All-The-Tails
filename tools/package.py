@@ -4,7 +4,7 @@ p=Path(__file__).resolve().parents[1]
 a=E.parse(p/'About/About.xml').getroot()
 name=a.findtext('packageId')
 output=p/(name+'-1.7.0-beta.1.zip')
-folders=['About','1.7','Textures','Languages','Races17','Kurin','Revia','Moyo','Dragonian','DragonianUnofficial','Silkiera','Ratkin','Kiiro','Rabbie','Glassy','Mofy','Heruan','Nyaron']
+folders=['About','1.7','Races']
 with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED) as z:
  for folder in folders:
   d=p/folder

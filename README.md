@@ -58,11 +58,12 @@ A new Workshop item is required; the original PublishedFileId is not included as
 |---|---|
 | `1.7/` | RimWorld 1.7 content (Assemblies) |
 | `About/` | Mod metadata and preview image |
-| `Races17/` | Insect tail patches (def-driven fallback) |
+| `Races/` | Per-race modules; each one is only loaded when its race mod is active |
 | `Source17/` | C# source for the 1.7 build |
 | `tools/` | Packaging script |
-| `Kurin/`, `Revia/`, `Moyo/`, `Dragonian/`, `DragonianUnofficial/`, `Silkiera/`, `Ratkin/`, `Kiiro/`, `Rabbie/`, `Glassy/`, `Mofy/`, `Heruan/`, `Nyaron/` | Race modules for HAR and anthro races |
-| `BigSmall/`, `Dogbold/`, `Foxbold/`, `Orassan/`, `Tozol/`, `Yanzihko/`, `Xenomorph/` | Race modules for tailed non-HAR races |
+| `Races/Kurin/`, `Races/Revia/`, `Races/Moyo/`, `Races/Dragonian/`, `Races/DragonianUnofficial/`, `Races/Silkiera/`, `Races/Ratkin/`, `Races/Kiiro/`, `Races/Rabbie/`, `Races/Glassy/`, `Races/Mofy/`, `Races/Heruan/`, `Races/Nyaron/` | Race modules for HAR and anthro races |
+| `Races/BigSmall/`, `Races/Dogbold/`, `Races/Foxbold/`, `Races/Orassan/`, `Races/Tozol/`, `Races/Yanzihko/`, `Races/Xenomorph/` | Race modules for tailed non-HAR races |
+| `Races/InsectTails/` | Insect tail patches (def-driven fallback) |
 
 ## Build
 
